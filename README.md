@@ -14,6 +14,7 @@ cd TaylorMLP
 curl -L https://anonymous.4open.science/api/repo/TaylorAttack-1BDB/zip -o TaylorAttack.zip
 unzip TaylorAttack.zip
 rm TaylorAttack.zip
+chmod +x TaylorAttack/scripts/*
 ```
 
 **2. Build the Docker image**
