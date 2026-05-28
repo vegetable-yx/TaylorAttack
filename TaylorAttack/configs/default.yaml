@@ -1,0 +1,58 @@
+run:
+  output_root: TaylorAttack/results
+  seed: 42
+  dtype: bfloat16
+  device: cuda
+
+models:
+  - id: meta-llama/Meta-Llama-3-8B-Instruct
+    short_name: llama3_8b_instruct
+    architecture: llama
+    activation: silu
+  - id: google/gemma-4-E2B-it
+    short_name: gemma4_e2b_it
+    architecture: gemma
+    activation: gelu_pytorch_tanh
+  - id: google/gemma-4-E4B-it
+    short_name: gemma4_e4b_it
+    architecture: gemma
+    activation: gelu_pytorch_tanh
+  - id: Qwen/Qwen3.5-9B
+    short_name: qwen35_9b
+    architecture: qwen
+    activation: silu
+  - id: Qwen/Qwen3.6-27B
+    short_name: qwen36_27b
+    architecture: qwen
+    activation: silu
+
+protection:
+  select_dim: 10000
+  select_dim_ratio: 0.6975446428571429
+  grad_order: 6
+  grad_order_min: 8
+  delta_hidden_state_thd: 2.5
+  max_gap: 0.0
+
+calibration:
+  dataset_id: wikitext
+  dataset_config: wikitext-2-raw-v1
+  split: test
+  text_field: text
+  max_tokens: 20000
+  sequence_length: 4096
+
+datasets:
+  - name: math500
+    source: dataset
+    dataset_id: HuggingFaceH4/MATH-500
+    split: test
+    question_field: problem
+    answer_field: answer
+    metric: exact_match
+  - name: gpqa_diamond
+    source: hf_file
+    dataset_id: Idavidrein/gpqa
+    filename: gpqa_diamond.csv
+    split: train
+    metric: multiple_choice

@@ -1,0 +1,59 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[model] downloading meta-llama/Meta-Llama-3-8B-Instruct
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files: 100%|██████████| 17/17 [00:00<00:00, 215417.43it/s]
+[model] downloading google/gemma-4-E2B-it
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 46204.08it/s]
+[model] downloading google/gemma-4-E4B-it
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 245121.66it/s]
+[model] downloading Qwen/Qwen3.5-9B
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files: 100%|██████████| 16/16 [00:00<00:00, 310689.19it/s]
+[model] downloading Qwen/Qwen3.6-27B
+Fetching 29 files:   0%|          | 0/29 [00:00<?, ?it/s]Fetching 29 files: 100%|██████████| 29/29 [00:00<00:00, 43596.71it/s]
+[dataset] downloading aime26: MathArena/aime_2026
+Saving the dataset (0/1 shards):   0%|          | 0/30 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 30/30 [00:00<00:00, 16225.55 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 30/30 [00:00<00:00, 15105.54 examples/s]
+[dataset] downloading math500: HuggingFaceH4/MATH-500
+Saving the dataset (0/1 shards):   0%|          | 0/500 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 500/500 [00:00<00:00, 217118.96 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 500/500 [00:00<00:00, 206677.05 examples/s]
+[dataset] downloading gpqa_diamond: Idavidrein/gpqa
+[dataset] downloading livecodebench_v6: livecodebench/code_generation_lite
+[dataset] using existing snapshot for livecodebench_v6: TaylorAttack/data/livecodebench_v6/snapshot
+===== llama3_8b_instruct: calibration output=TaylorAttack/results/calibration/llama3_8b_instruct_hidden_states.pt =====
+calibration rc llama3_8b_instruct: 0
+===== llama3_8b_instruct: attack output=TaylorAttack/results/llama3_8b_instruct_attack =====
+attack rc llama3_8b_instruct: 0
+===== gemma4_e2b_it: calibration output=TaylorAttack/results/calibration/gemma4_e2b_it_hidden_states.pt =====
+calibration rc gemma4_e2b_it: 0
+===== gemma4_e2b_it: attack output=TaylorAttack/results/gemma4_e2b_it_attack =====
+attack rc gemma4_e2b_it: 0
+===== gemma4_e4b_it: calibration output=TaylorAttack/results/calibration/gemma4_e4b_it_hidden_states.pt =====
+calibration rc gemma4_e4b_it: 0
+===== gemma4_e4b_it: attack output=TaylorAttack/results/gemma4_e4b_it_attack =====
+attack rc gemma4_e4b_it: 0
+===== qwen35_9b: calibration output=TaylorAttack/results/calibration/qwen35_9b_hidden_states.pt =====
+calibration rc qwen35_9b: 0
+===== qwen35_9b: attack output=TaylorAttack/results/qwen35_9b_attack =====
+attack rc qwen35_9b: 0
+===== qwen36_27b: calibration output=TaylorAttack/results/calibration/qwen36_27b_hidden_states.pt =====
+calibration rc qwen36_27b: 0
+===== qwen36_27b: attack output=TaylorAttack/results/qwen36_27b_attack =====
+attack rc qwen36_27b: 0
+wrote combined attack table to /home/ubuntu/TaylorMLP_remote/TaylorMLP/TaylorAttack/results/table1_attack_performance_all.md

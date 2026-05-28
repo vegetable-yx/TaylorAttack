@@ -1,0 +1,24 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 140748.46it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   3%|▎         | 26/851 [00:00<00:03, 254.50it/s]Loading weights:   6%|▌         | 52/851 [00:00<00:05, 151.61it/s]Loading weights:   9%|▊         | 74/851 [00:00<00:04, 173.48it/s]Loading weights:  11%|█         | 95/851 [00:00<00:04, 171.34it/s]Loading weights:  14%|█▍        | 119/851 [00:00<00:03, 188.57it/s]Loading weights:  16%|█▋        | 139/851 [00:00<00:03, 191.21it/s]Loading weights:  19%|█▊        | 159/851 [00:00<00:03, 176.70it/s]Loading weights:  22%|██▏       | 186/851 [00:00<00:03, 198.18it/s]Loading weights:  24%|██▍       | 207/851 [00:01<00:03, 176.12it/s]Loading weights:  28%|██▊       | 235/851 [00:01<00:03, 202.64it/s]Loading weights:  30%|███       | 257/851 [00:01<00:03, 191.65it/s]Loading weights:  33%|███▎      | 278/851 [00:01<00:02, 194.16it/s]Loading weights:  35%|███▌      | 298/851 [00:01<00:02, 194.80it/s]Loading weights:  37%|███▋      | 318/851 [00:01<00:02, 183.89it/s]Loading weights:  40%|████      | 344/851 [00:01<00:02, 202.33it/s]Loading weights:  43%|████▎     | 365/851 [00:01<00:02, 181.10it/s]Loading weights:  45%|████▌     | 386/851 [00:02<00:02, 186.55it/s]Loading weights:  48%|████▊     | 412/851 [00:02<00:02, 203.29it/s]Loading weights:  51%|█████     | 433/851 [00:02<00:02, 200.61it/s]Loading weights:  53%|█████▎    | 454/851 [00:02<00:02, 187.95it/s]Loading weights:  56%|█████▌    | 474/851 [00:02<00:02, 182.89it/s]Loading weights:  59%|█████▉    | 501/851 [00:02<00:01, 204.74it/s]Loading weights:  61%|██████▏   | 522/851 [00:02<00:01, 194.50it/s]Loading weights:  64%|██████▍   | 543/851 [00:02<00:01, 196.88it/s]Loading weights:  66%|██████▌   | 563/851 [00:02<00:01, 196.64it/s]Loading weights:  69%|██████▊   | 583/851 [00:03<00:01, 181.13it/s]Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 198.87it/s]Loading weights:  74%|███████▍  | 630/851 [00:03<00:01, 178.98it/s]Loading weights:  77%|███████▋  | 659/851 [00:03<00:00, 204.45it/s]Loading weights:  80%|████████  | 681/851 [00:03<00:00, 197.42it/s]Loading weights:  82%|████████▏ | 702/851 [00:03<00:00, 198.57it/s]Loading weights:  85%|████████▍ | 723/851 [00:03<00:00, 200.01it/s]Loading weights:  87%|████████▋ | 744/851 [00:03<00:00, 184.60it/s]Loading weights:  90%|█████████ | 769/851 [00:04<00:00, 198.11it/s]Loading weights:  93%|█████████▎| 790/851 [00:04<00:00, 178.32it/s]Loading weights:  96%|█████████▌| 819/851 [00:04<00:00, 204.10it/s]Loading weights:  99%|█████████▉| 841/851 [00:04<00:00, 188.83it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 190.81it/s]
+wrote TaylorAttack/results/calibration/qwen36_27b_hidden_states.pt

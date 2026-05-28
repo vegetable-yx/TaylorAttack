@@ -1,0 +1,125 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[benchmark] formatted 500 prompts with chat template (no-think with enable_thinking=False)
+[kl] loaded 500 examples for math500 (top_logprobs=32)
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Failed to load generation config for Qwen/Qwen3.5-9B: Qwen/Qwen3.5-9B does not appear to have a file named generation_config.json. Checkout 'https://huggingface.co/Qwen/Qwen3.5-9B/tree/main' for available files.. Proceeding without generation config.
+Disabling overlap schedule since mamba no_buffer is not compatible with overlap schedule, try to use --disable-radix-cache if overlap schedule is necessary
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Multi-thread loading shards:   0% Completed | 0/4 [00:00<?, ?it/s]Multi-thread loading shards:  25% Completed | 1/4 [00:00<00:01,  2.11it/s]Multi-thread loading shards:  50% Completed | 2/4 [00:00<00:00,  2.10it/s]Multi-thread loading shards:  75% Completed | 3/4 [00:01<00:00,  2.03it/s]Multi-thread loading shards: 100% Completed | 4/4 [00:01<00:00,  2.10it/s]Multi-thread loading shards: 100% Completed | 4/4 [00:01<00:00,  2.09it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]Capturing batches (bs=128 avail_mem=27.89 GB):   0%|          | 0/20 [00:00<?, ?it/s]2026-05-24 16:06:51,570 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-05-24 16:06:51] Unexpected error during package walk: cutlass.cute.experimental
+Capturing batches (bs=128 avail_mem=27.89 GB):   5%|▌         | 1/20 [00:12<04:05, 12.93s/it]Capturing batches (bs=120 avail_mem=27.73 GB):   5%|▌         | 1/20 [00:12<04:05, 12.93s/it]Capturing batches (bs=120 avail_mem=27.73 GB):  10%|█         | 2/20 [00:13<01:38,  5.46s/it]Capturing batches (bs=112 avail_mem=27.73 GB):  10%|█         | 2/20 [00:13<01:38,  5.46s/it]Capturing batches (bs=104 avail_mem=27.73 GB):  10%|█         | 2/20 [00:13<01:38,  5.46s/it]Capturing batches (bs=104 avail_mem=27.73 GB):  20%|██        | 4/20 [00:13<00:33,  2.09s/it]Capturing batches (bs=96 avail_mem=27.72 GB):  20%|██        | 4/20 [00:13<00:33,  2.09s/it] Capturing batches (bs=88 avail_mem=27.72 GB):  20%|██        | 4/20 [00:13<00:33,  2.09s/it]Capturing batches (bs=88 avail_mem=27.72 GB):  30%|███       | 6/20 [00:13<00:16,  1.14s/it]Capturing batches (bs=80 avail_mem=27.72 GB):  30%|███       | 6/20 [00:13<00:16,  1.14s/it]Capturing batches (bs=80 avail_mem=27.72 GB):  35%|███▌      | 7/20 [00:13<00:11,  1.12it/s]Capturing batches (bs=72 avail_mem=27.72 GB):  35%|███▌      | 7/20 [00:13<00:11,  1.12it/s]Capturing batches (bs=64 avail_mem=27.72 GB):  35%|███▌      | 7/20 [00:13<00:11,  1.12it/s]Capturing batches (bs=64 avail_mem=27.72 GB):  45%|████▌     | 9/20 [00:13<00:06,  1.80it/s]Capturing batches (bs=56 avail_mem=27.72 GB):  45%|████▌     | 9/20 [00:13<00:06,  1.80it/s]Capturing batches (bs=48 avail_mem=27.72 GB):  45%|████▌     | 9/20 [00:13<00:06,  1.80it/s]Capturing batches (bs=48 avail_mem=27.72 GB):  55%|█████▌    | 11/20 [00:14<00:03,  2.63it/s]Capturing batches (bs=40 avail_mem=27.71 GB):  55%|█████▌    | 11/20 [00:14<00:03,  2.63it/s]Capturing batches (bs=32 avail_mem=27.71 GB):  55%|█████▌    | 11/20 [00:14<00:03,  2.63it/s]Capturing batches (bs=32 avail_mem=27.71 GB):  65%|██████▌   | 13/20 [00:14<00:01,  3.61it/s]Capturing batches (bs=24 avail_mem=27.71 GB):  65%|██████▌   | 13/20 [00:14<00:01,  3.61it/s]Capturing batches (bs=16 avail_mem=27.71 GB):  65%|██████▌   | 13/20 [00:14<00:01,  3.61it/s]Capturing batches (bs=16 avail_mem=27.71 GB):  75%|███████▌  | 15/20 [00:14<00:01,  4.29it/s]Capturing batches (bs=12 avail_mem=27.71 GB):  75%|███████▌  | 15/20 [00:14<00:01,  4.29it/s]Capturing batches (bs=8 avail_mem=27.71 GB):  75%|███████▌  | 15/20 [00:14<00:01,  4.29it/s] Capturing batches (bs=8 avail_mem=27.71 GB):  85%|████████▌ | 17/20 [00:14<00:00,  4.84it/s]Capturing batches (bs=4 avail_mem=27.71 GB):  85%|████████▌ | 17/20 [00:14<00:00,  4.84it/s]Capturing batches (bs=2 avail_mem=27.70 GB):  85%|████████▌ | 17/20 [00:14<00:00,  4.84it/s]Capturing batches (bs=2 avail_mem=27.70 GB):  95%|█████████▌| 19/20 [00:14<00:00,  6.01it/s]Capturing batches (bs=1 avail_mem=27.70 GB):  95%|█████████▌| 19/20 [00:14<00:00,  6.01it/s]Capturing batches (bs=1 avail_mem=27.70 GB): 100%|██████████| 20/20 [00:15<00:00,  5.62it/s]Capturing batches (bs=1 avail_mem=27.70 GB): 100%|██████████| 20/20 [00:15<00:00,  1.32it/s]
+[kl] starting SGLang top-32 scorer: model=Qwen/Qwen3.5-9B
+[benchmark] math500/original-topk: 32/500 prompts, 2.75 prompts/s
+[benchmark] math500/original-topk: 64/500 prompts, 5.19 prompts/s
+[benchmark] math500/original-topk: 96/500 prompts, 7.36 prompts/s
+[benchmark] math500/original-topk: 128/500 prompts, 9.27 prompts/s
+[benchmark] math500/original-topk: 160/500 prompts, 10.74 prompts/s
+[benchmark] math500/original-topk: 192/500 prompts, 12.24 prompts/s
+[benchmark] math500/original-topk: 224/500 prompts, 13.37 prompts/s
+[benchmark] math500/original-topk: 256/500 prompts, 14.55 prompts/s
+[benchmark] math500/original-topk: 288/500 prompts, 15.65 prompts/s
+[benchmark] math500/original-topk: 320/500 prompts, 16.65 prompts/s
+[benchmark] math500/original-topk: 352/500 prompts, 17.62 prompts/s
+[benchmark] math500/original-topk: 384/500 prompts, 18.17 prompts/s
+[benchmark] math500/original-topk: 416/500 prompts, 18.98 prompts/s
+[benchmark] math500/original-topk: 448/500 prompts, 19.77 prompts/s
+[benchmark] math500/original-topk: 480/500 prompts, 20.50 prompts/s
+[benchmark] math500/original-topk: 500/500 prompts, 20.52 prompts/s
+[benchmark] prepared SGLang sidecar config for TaylorAttack/results/qwen35_9b_attack/recovered_model: qwen3_5_text -> qwen3_5
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:123: UserWarning: resource_tracker: process died unexpectedly, relaunching.  Some resources might leak.
+  warnings.warn('resource_tracker: process died unexpectedly, '
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Multi-thread loading shards:   0% Completed | 0/1 [00:00<?, ?it/s]Multi-thread loading shards: 100% Completed | 1/1 [00:01<00:00,  1.65s/it]Multi-thread loading shards: 100% Completed | 1/1 [00:01<00:00,  1.65s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]Capturing batches (bs=128 avail_mem=27.88 GB):   0%|          | 0/20 [00:00<?, ?it/s]2026-05-24 16:07:45,806 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-05-24 16:07:45] Unexpected error during package walk: cutlass.cute.experimental
+Capturing batches (bs=128 avail_mem=27.88 GB):   5%|▌         | 1/20 [00:01<00:36,  1.92s/it]Capturing batches (bs=120 avail_mem=27.71 GB):   5%|▌         | 1/20 [00:01<00:36,  1.92s/it]Capturing batches (bs=112 avail_mem=27.71 GB):   5%|▌         | 1/20 [00:02<00:36,  1.92s/it]Capturing batches (bs=112 avail_mem=27.71 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.79it/s]Capturing batches (bs=104 avail_mem=27.71 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.79it/s]Capturing batches (bs=96 avail_mem=27.71 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.79it/s] Capturing batches (bs=96 avail_mem=27.71 GB):  25%|██▌       | 5/20 [00:02<00:04,  3.19it/s]Capturing batches (bs=88 avail_mem=27.70 GB):  25%|██▌       | 5/20 [00:02<00:04,  3.19it/s]Capturing batches (bs=80 avail_mem=27.70 GB):  25%|██▌       | 5/20 [00:02<00:04,  3.19it/s]Capturing batches (bs=80 avail_mem=27.70 GB):  35%|███▌      | 7/20 [00:02<00:02,  4.64it/s]Capturing batches (bs=72 avail_mem=27.70 GB):  35%|███▌      | 7/20 [00:02<00:02,  4.64it/s]Capturing batches (bs=64 avail_mem=27.70 GB):  35%|███▌      | 7/20 [00:02<00:02,  4.64it/s]Capturing batches (bs=64 avail_mem=27.70 GB):  45%|████▌     | 9/20 [00:02<00:01,  5.71it/s]Capturing batches (bs=56 avail_mem=27.70 GB):  45%|████▌     | 9/20 [00:02<00:01,  5.71it/s]Capturing batches (bs=48 avail_mem=27.70 GB):  45%|████▌     | 9/20 [00:02<00:01,  5.71it/s]Capturing batches (bs=48 avail_mem=27.70 GB):  55%|█████▌    | 11/20 [00:02<00:01,  7.01it/s]Capturing batches (bs=40 avail_mem=27.69 GB):  55%|█████▌    | 11/20 [00:02<00:01,  7.01it/s]Capturing batches (bs=32 avail_mem=27.69 GB):  55%|█████▌    | 11/20 [00:02<00:01,  7.01it/s]Capturing batches (bs=32 avail_mem=27.69 GB):  65%|██████▌   | 13/20 [00:02<00:00,  8.15it/s]Capturing batches (bs=24 avail_mem=27.69 GB):  65%|██████▌   | 13/20 [00:02<00:00,  8.15it/s]Capturing batches (bs=16 avail_mem=27.69 GB):  65%|██████▌   | 13/20 [00:03<00:00,  8.15it/s]Capturing batches (bs=16 avail_mem=27.69 GB):  75%|███████▌  | 15/20 [00:03<00:00,  8.88it/s]Capturing batches (bs=12 avail_mem=27.69 GB):  75%|███████▌  | 15/20 [00:03<00:00,  8.88it/s]Capturing batches (bs=8 avail_mem=27.69 GB):  75%|███████▌  | 15/20 [00:03<00:00,  8.88it/s] Capturing batches (bs=8 avail_mem=27.69 GB):  85%|████████▌ | 17/20 [00:03<00:00,  9.77it/s]Capturing batches (bs=4 avail_mem=27.69 GB):  85%|████████▌ | 17/20 [00:03<00:00,  9.77it/s]Capturing batches (bs=2 avail_mem=27.68 GB):  85%|████████▌ | 17/20 [00:03<00:00,  9.77it/s]Capturing batches (bs=2 avail_mem=27.68 GB):  95%|█████████▌| 19/20 [00:03<00:00, 10.65it/s]Capturing batches (bs=1 avail_mem=27.68 GB):  95%|█████████▌| 19/20 [00:03<00:00, 10.65it/s]Capturing batches (bs=1 avail_mem=27.68 GB): 100%|██████████| 20/20 [00:03<00:00,  5.66it/s]
+[kl] starting SGLang token-id scorer: model=TaylorAttack/results/qwen35_9b_attack/recovered_model_sglang
+[benchmark] math500/recovered-tokenids: 32/500 prompts, 7.92 prompts/s
+[benchmark] math500/recovered-tokenids: 64/500 prompts, 8.68 prompts/s
+[benchmark] math500/recovered-tokenids: 96/500 prompts, 8.97 prompts/s
+[benchmark] math500/recovered-tokenids: 128/500 prompts, 8.60 prompts/s
+[benchmark] math500/recovered-tokenids: 160/500 prompts, 8.56 prompts/s
+[benchmark] math500/recovered-tokenids: 192/500 prompts, 8.35 prompts/s
+[benchmark] math500/recovered-tokenids: 224/500 prompts, 8.27 prompts/s
+[benchmark] math500/recovered-tokenids: 256/500 prompts, 8.26 prompts/s
+[benchmark] math500/recovered-tokenids: 288/500 prompts, 8.28 prompts/s
+[benchmark] math500/recovered-tokenids: 320/500 prompts, 8.19 prompts/s
+[benchmark] math500/recovered-tokenids: 352/500 prompts, 8.15 prompts/s
+[benchmark] math500/recovered-tokenids: 384/500 prompts, 8.13 prompts/s
+[benchmark] math500/recovered-tokenids: 416/500 prompts, 8.15 prompts/s
+[benchmark] math500/recovered-tokenids: 448/500 prompts, 8.18 prompts/s
+[benchmark] math500/recovered-tokenids: 480/500 prompts, 8.17 prompts/s
+[benchmark] math500/recovered-tokenids: 500/500 prompts, 8.15 prompts/s
+[benchmark] formatted 198 prompts with chat template (no-think with enable_thinking=False)
+[kl] loaded 198 examples for gpqa_diamond (top_logprobs=32)
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:123: UserWarning: resource_tracker: process died unexpectedly, relaunching.  Some resources might leak.
+  warnings.warn('resource_tracker: process died unexpectedly, '
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Multi-thread loading shards:   0% Completed | 0/4 [00:00<?, ?it/s]Multi-thread loading shards:  25% Completed | 1/4 [00:00<00:01,  2.10it/s]Multi-thread loading shards:  50% Completed | 2/4 [00:00<00:00,  2.07it/s]Multi-thread loading shards:  75% Completed | 3/4 [00:01<00:00,  1.99it/s]Multi-thread loading shards: 100% Completed | 4/4 [00:01<00:00,  2.16it/s]Multi-thread loading shards: 100% Completed | 4/4 [00:01<00:00,  2.11it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]Capturing batches (bs=128 avail_mem=27.89 GB):   0%|          | 0/20 [00:00<?, ?it/s]2026-05-24 16:09:11,124 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-05-24 16:09:11] Unexpected error during package walk: cutlass.cute.experimental
+Capturing batches (bs=128 avail_mem=27.89 GB):   5%|▌         | 1/20 [00:01<00:36,  1.94s/it]Capturing batches (bs=120 avail_mem=27.72 GB):   5%|▌         | 1/20 [00:01<00:36,  1.94s/it]Capturing batches (bs=112 avail_mem=27.72 GB):   5%|▌         | 1/20 [00:02<00:36,  1.94s/it]Capturing batches (bs=112 avail_mem=27.72 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.77it/s]Capturing batches (bs=104 avail_mem=27.72 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.77it/s]Capturing batches (bs=96 avail_mem=27.72 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.77it/s] Capturing batches (bs=96 avail_mem=27.72 GB):  25%|██▌       | 5/20 [00:02<00:05,  2.97it/s]Capturing batches (bs=88 avail_mem=27.72 GB):  25%|██▌       | 5/20 [00:02<00:05,  2.97it/s]Capturing batches (bs=80 avail_mem=27.72 GB):  25%|██▌       | 5/20 [00:02<00:05,  2.97it/s]Capturing batches (bs=80 avail_mem=27.72 GB):  35%|███▌      | 7/20 [00:02<00:02,  4.34it/s]Capturing batches (bs=72 avail_mem=27.71 GB):  35%|███▌      | 7/20 [00:02<00:02,  4.34it/s]Capturing batches (bs=64 avail_mem=27.71 GB):  35%|███▌      | 7/20 [00:02<00:02,  4.34it/s]Capturing batches (bs=64 avail_mem=27.71 GB):  45%|████▌     | 9/20 [00:02<00:01,  5.67it/s]Capturing batches (bs=56 avail_mem=27.71 GB):  45%|████▌     | 9/20 [00:02<00:01,  5.67it/s]Capturing batches (bs=48 avail_mem=27.71 GB):  45%|████▌     | 9/20 [00:02<00:01,  5.67it/s]Capturing batches (bs=48 avail_mem=27.71 GB):  55%|█████▌    | 11/20 [00:02<00:01,  6.89it/s]Capturing batches (bs=40 avail_mem=27.71 GB):  55%|█████▌    | 11/20 [00:02<00:01,  6.89it/s]Capturing batches (bs=32 avail_mem=27.71 GB):  55%|█████▌    | 11/20 [00:02<00:01,  6.89it/s]Capturing batches (bs=32 avail_mem=27.71 GB):  65%|██████▌   | 13/20 [00:03<00:00,  7.96it/s]Capturing batches (bs=24 avail_mem=27.71 GB):  65%|██████▌   | 13/20 [00:03<00:00,  7.96it/s]Capturing batches (bs=16 avail_mem=27.71 GB):  65%|██████▌   | 13/20 [00:03<00:00,  7.96it/s]Capturing batches (bs=16 avail_mem=27.71 GB):  75%|███████▌  | 15/20 [00:03<00:00,  8.59it/s]Capturing batches (bs=12 avail_mem=27.70 GB):  75%|███████▌  | 15/20 [00:03<00:00,  8.59it/s]Capturing batches (bs=8 avail_mem=27.70 GB):  75%|███████▌  | 15/20 [00:03<00:00,  8.59it/s] Capturing batches (bs=8 avail_mem=27.70 GB):  85%|████████▌ | 17/20 [00:03<00:00,  8.76it/s]Capturing batches (bs=4 avail_mem=27.70 GB):  85%|████████▌ | 17/20 [00:03<00:00,  8.76it/s]Capturing batches (bs=2 avail_mem=27.70 GB):  85%|████████▌ | 17/20 [00:03<00:00,  8.76it/s]Capturing batches (bs=2 avail_mem=27.70 GB):  95%|█████████▌| 19/20 [00:03<00:00,  9.66it/s]Capturing batches (bs=1 avail_mem=27.70 GB):  95%|█████████▌| 19/20 [00:03<00:00,  9.66it/s]Capturing batches (bs=1 avail_mem=27.70 GB): 100%|██████████| 20/20 [00:03<00:00,  5.41it/s]
+[kl] starting SGLang top-32 scorer: model=Qwen/Qwen3.5-9B
+[benchmark] gpqa_diamond/original-topk: 32/198 prompts, 38.94 prompts/s
+[benchmark] gpqa_diamond/original-topk: 64/198 prompts, 40.17 prompts/s
+[benchmark] gpqa_diamond/original-topk: 96/198 prompts, 39.46 prompts/s
+[benchmark] gpqa_diamond/original-topk: 128/198 prompts, 37.67 prompts/s
+[benchmark] gpqa_diamond/original-topk: 160/198 prompts, 38.13 prompts/s
+[benchmark] gpqa_diamond/original-topk: 192/198 prompts, 38.39 prompts/s
+[benchmark] gpqa_diamond/original-topk: 198/198 prompts, 37.60 prompts/s
+[benchmark] prepared SGLang sidecar config for TaylorAttack/results/qwen35_9b_attack/recovered_model: qwen3_5_text -> qwen3_5
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:123: UserWarning: resource_tracker: process died unexpectedly, relaunching.  Some resources might leak.
+  warnings.warn('resource_tracker: process died unexpectedly, '
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Multi-thread loading shards:   0% Completed | 0/1 [00:00<?, ?it/s]Multi-thread loading shards: 100% Completed | 1/1 [00:01<00:00,  1.63s/it]Multi-thread loading shards: 100% Completed | 1/1 [00:01<00:00,  1.63s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]Capturing batches (bs=128 avail_mem=27.89 GB):   0%|          | 0/20 [00:00<?, ?it/s]2026-05-24 16:09:34,587 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-05-24 16:09:34] Unexpected error during package walk: cutlass.cute.experimental
+Capturing batches (bs=128 avail_mem=27.89 GB):   5%|▌         | 1/20 [00:01<00:36,  1.92s/it]Capturing batches (bs=120 avail_mem=27.72 GB):   5%|▌         | 1/20 [00:01<00:36,  1.92s/it]Capturing batches (bs=112 avail_mem=27.72 GB):   5%|▌         | 1/20 [00:02<00:36,  1.92s/it]Capturing batches (bs=112 avail_mem=27.72 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.79it/s]Capturing batches (bs=104 avail_mem=27.72 GB):  15%|█▌        | 3/20 [00:02<00:09,  1.79it/s]Capturing batches (bs=104 avail_mem=27.72 GB):  20%|██        | 4/20 [00:02<00:06,  2.46it/s]Capturing batches (bs=96 avail_mem=27.72 GB):  20%|██        | 4/20 [00:02<00:06,  2.46it/s] Capturing batches (bs=88 avail_mem=27.72 GB):  20%|██        | 4/20 [00:02<00:06,  2.46it/s]Capturing batches (bs=88 avail_mem=27.72 GB):  30%|███       | 6/20 [00:02<00:03,  4.08it/s]Capturing batches (bs=80 avail_mem=27.72 GB):  30%|███       | 6/20 [00:02<00:03,  4.08it/s]Capturing batches (bs=72 avail_mem=27.71 GB):  30%|███       | 6/20 [00:02<00:03,  4.08it/s]Capturing batches (bs=72 avail_mem=27.71 GB):  40%|████      | 8/20 [00:02<00:02,  5.65it/s]Capturing batches (bs=64 avail_mem=27.71 GB):  40%|████      | 8/20 [00:02<00:02,  5.65it/s]Capturing batches (bs=56 avail_mem=27.71 GB):  40%|████      | 8/20 [00:02<00:02,  5.65it/s]Capturing batches (bs=56 avail_mem=27.71 GB):  50%|█████     | 10/20 [00:02<00:01,  7.05it/s]Capturing batches (bs=48 avail_mem=27.71 GB):  50%|█████     | 10/20 [00:02<00:01,  7.05it/s]Capturing batches (bs=40 avail_mem=27.71 GB):  50%|█████     | 10/20 [00:02<00:01,  7.05it/s]Capturing batches (bs=40 avail_mem=27.71 GB):  60%|██████    | 12/20 [00:02<00:00,  8.28it/s]Capturing batches (bs=32 avail_mem=27.71 GB):  60%|██████    | 12/20 [00:02<00:00,  8.28it/s]Capturing batches (bs=24 avail_mem=27.71 GB):  60%|██████    | 12/20 [00:02<00:00,  8.28it/s]Capturing batches (bs=24 avail_mem=27.71 GB):  70%|███████   | 14/20 [00:03<00:00,  9.30it/s]Capturing batches (bs=16 avail_mem=27.71 GB):  70%|███████   | 14/20 [00:03<00:00,  9.30it/s]Capturing batches (bs=12 avail_mem=27.70 GB):  70%|███████   | 14/20 [00:03<00:00,  9.30it/s]Capturing batches (bs=12 avail_mem=27.70 GB):  80%|████████  | 16/20 [00:03<00:00,  9.87it/s]Capturing batches (bs=8 avail_mem=27.70 GB):  80%|████████  | 16/20 [00:03<00:00,  9.87it/s] Capturing batches (bs=4 avail_mem=27.70 GB):  80%|████████  | 16/20 [00:03<00:00,  9.87it/s]Capturing batches (bs=4 avail_mem=27.70 GB):  90%|█████████ | 18/20 [00:03<00:00, 10.15it/s]Capturing batches (bs=2 avail_mem=27.70 GB):  90%|█████████ | 18/20 [00:03<00:00, 10.15it/s]Capturing batches (bs=1 avail_mem=27.70 GB):  90%|█████████ | 18/20 [00:03<00:00, 10.15it/s]Capturing batches (bs=1 avail_mem=27.70 GB): 100%|██████████| 20/20 [00:03<00:00, 10.99it/s]Capturing batches (bs=1 avail_mem=27.70 GB): 100%|██████████| 20/20 [00:03<00:00,  5.67it/s]
+[kl] starting SGLang token-id scorer: model=TaylorAttack/results/qwen35_9b_attack/recovered_model_sglang
+[benchmark] gpqa_diamond/recovered-tokenids: 32/198 prompts, 6.71 prompts/s
+[benchmark] gpqa_diamond/recovered-tokenids: 64/198 prompts, 6.94 prompts/s
+[benchmark] gpqa_diamond/recovered-tokenids: 96/198 prompts, 6.61 prompts/s
+[benchmark] gpqa_diamond/recovered-tokenids: 128/198 prompts, 6.06 prompts/s
+[benchmark] gpqa_diamond/recovered-tokenids: 160/198 prompts, 6.13 prompts/s
+[benchmark] gpqa_diamond/recovered-tokenids: 192/198 prompts, 6.15 prompts/s
+[benchmark] gpqa_diamond/recovered-tokenids: 198/198 prompts, 6.13 prompts/s
+wrote KL table to TaylorAttack/results/qwen35_9b_kl_official_sglang

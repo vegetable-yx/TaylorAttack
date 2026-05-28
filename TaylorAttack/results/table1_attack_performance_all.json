@@ -1,0 +1,47 @@
+[
+  {
+    "model": "gemma4_e2b_it",
+    "taylormlp_params": 1557135360,
+    "recovered_params": 1557103104,
+    "recovered_ratio": 0.9999792850378788,
+    "elapsed_sec": 29.193598747253418,
+    "down_column_p99_max": 1.3780479429285494e-05,
+    "down_column_error_max": 1.0000000590276812
+  },
+  {
+    "model": "gemma4_e4b_it",
+    "taylormlp_params": 3303014400,
+    "recovered_params": 3301570560,
+    "recovered_ratio": 0.9995628720238096,
+    "elapsed_sec": 55.40774917602539,
+    "down_column_p99_max": 1.00000000200543,
+    "down_column_error_max": 1.0000001006662396
+  },
+  {
+    "model": "llama3_8b_instruct",
+    "taylormlp_params": 5637144576,
+    "recovered_params": 5637144576,
+    "recovered_ratio": 1.0,
+    "elapsed_sec": 106.07990550994873,
+    "down_column_p99_max": 3.937832776229545e-07,
+    "down_column_error_max": 5.51322536581287e-07
+  },
+  {
+    "model": "qwen35_9b",
+    "taylormlp_params": 4831838208,
+    "recovered_params": 4831838208,
+    "recovered_ratio": 1.0,
+    "elapsed_sec": 92.69006872177124,
+    "down_column_p99_max": 3.943570991083103e-07,
+    "down_column_error_max": 5.485285175345673e-07
+  },
+  {
+    "model": "qwen36_27b",
+    "taylormlp_params": 17112760320,
+    "recovered_params": 17112760320,
+    "recovered_ratio": 1.0,
+    "elapsed_sec": 421.0694270133972,
+    "down_column_p99_max": 3.9384069539498996e-07,
+    "down_column_error_max": 5.486062738971961e-07
+  }
+]

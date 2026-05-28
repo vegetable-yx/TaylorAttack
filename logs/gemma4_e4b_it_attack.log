@@ -1,0 +1,66 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Loading weights:   0%|          | 0/2076 [00:00<?, ?it/s]Loading weights:  21%|██▏       | 442/2076 [00:00<00:00, 4384.78it/s]Loading weights:  42%|████▏     | 881/2076 [00:00<00:01, 827.37it/s] Loading weights:  53%|█████▎    | 1093/2076 [00:01<00:01, 851.66it/s]Loading weights:  60%|██████    | 1250/2076 [00:01<00:00, 844.71it/s]Loading weights:  66%|██████▋   | 1378/2076 [00:01<00:00, 821.21it/s]Loading weights:  81%|████████  | 1680/2076 [00:01<00:00, 1181.56it/s]Loading weights: 100%|██████████| 2076/2076 [00:01<00:00, 1212.20it/s]
+[attack] layer 0/41
+[attack] layer 1/41
+[attack] layer 2/41
+[attack] layer 3/41
+[attack] layer 4/41
+[attack] layer 5/41
+[attack] layer 6/41
+[attack] layer 7/41
+[attack] layer 8/41
+[attack] layer 9/41
+[attack] layer 10/41
+[attack] layer 11/41
+[attack] layer 12/41
+[attack] layer 13/41
+[attack] layer 14/41
+[attack] layer 15/41
+[attack] layer 16/41
+[attack] layer 17/41
+[attack] layer 18/41
+[attack] layer 19/41
+[attack] layer 20/41
+[attack] layer 21/41
+[attack] layer 22/41
+[attack] layer 23/41
+[attack] layer 24/41
+[attack] layer 25/41
+[attack] layer 26/41
+[attack] layer 27/41
+[attack] layer 28/41
+[attack] layer 29/41
+[attack] layer 30/41
+[attack] layer 31/41
+[attack] layer 32/41
+[attack] layer 33/41
+[attack] layer 34/41
+[attack] layer 35/41
+[attack] layer 36/41
+[attack] layer 37/41
+[attack] layer 38/41
+[attack] layer 39/41
+[attack] layer 40/41
+[attack] layer 41/41
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]
+wrote recovered model to TaylorAttack/results/gemma4_e4b_it_attack/recovered_model
+wrote attack metrics to TaylorAttack/results/gemma4_e4b_it_attack

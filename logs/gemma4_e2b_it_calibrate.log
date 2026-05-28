@@ -1,0 +1,22 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Loading weights:   0%|          | 0/1951 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 444/1951 [00:00<00:00, 4439.13it/s]Loading weights:  46%|████▌     | 888/1951 [00:00<00:01, 1039.39it/s]Loading weights:  57%|█████▋    | 1111/1951 [00:00<00:00, 1112.35it/s]Loading weights:  66%|██████▋   | 1293/1951 [00:01<00:00, 1087.80it/s]Loading weights:  92%|█████████▏| 1792/1951 [00:01<00:00, 1786.85it/s]Loading weights: 100%|██████████| 1951/1951 [00:01<00:00, 1578.27it/s]
+wrote TaylorAttack/results/calibration/gemma4_e2b_it_hidden_states.pt

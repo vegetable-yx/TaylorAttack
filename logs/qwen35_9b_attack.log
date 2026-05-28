@@ -1,0 +1,58 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.12/dist-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 12797.27it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   9%|▉         | 40/427 [00:00<00:00, 393.20it/s]Loading weights:  19%|█▊        | 80/427 [00:00<00:01, 334.50it/s]Loading weights:  27%|██▋       | 115/427 [00:00<00:00, 331.54it/s]Loading weights:  35%|███▍      | 149/427 [00:00<00:00, 315.38it/s]Loading weights:  44%|████▎     | 186/427 [00:00<00:00, 331.68it/s]Loading weights:  52%|█████▏    | 221/427 [00:00<00:00, 333.06it/s]Loading weights:  60%|█████▉    | 255/427 [00:00<00:00, 319.79it/s]Loading weights:  68%|██████▊   | 292/427 [00:00<00:00, 334.42it/s]Loading weights:  76%|███████▋  | 326/427 [00:00<00:00, 318.20it/s]Loading weights:  84%|████████▍ | 359/427 [00:01<00:00, 319.00it/s]Loading weights:  92%|█████████▏| 394/427 [00:01<00:00, 324.07it/s]Loading weights: 100%|██████████| 427/427 [00:01<00:00, 315.38it/s]Loading weights: 100%|██████████| 427/427 [00:01<00:00, 324.38it/s]
+[attack] layer 0/31
+[attack] layer 1/31
+[attack] layer 2/31
+[attack] layer 3/31
+[attack] layer 4/31
+[attack] layer 5/31
+[attack] layer 6/31
+[attack] layer 7/31
+[attack] layer 8/31
+[attack] layer 9/31
+[attack] layer 10/31
+[attack] layer 11/31
+[attack] layer 12/31
+[attack] layer 13/31
+[attack] layer 14/31
+[attack] layer 15/31
+[attack] layer 16/31
+[attack] layer 17/31
+[attack] layer 18/31
+[attack] layer 19/31
+[attack] layer 20/31
+[attack] layer 21/31
+[attack] layer 22/31
+[attack] layer 23/31
+[attack] layer 24/31
+[attack] layer 25/31
+[attack] layer 26/31
+[attack] layer 27/31
+[attack] layer 28/31
+[attack] layer 29/31
+[attack] layer 30/31
+[attack] layer 31/31
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.92s/it]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.92s/it]
+wrote recovered model to TaylorAttack/results/qwen35_9b_attack/recovered_model
+wrote attack metrics to TaylorAttack/results/qwen35_9b_attack

@@ -1,0 +1,11 @@
+===== llama3_8b_instruct: KL backend=sglang output=TaylorAttack/results/llama3_8b_instruct_kl_official_sglang batch=16 top_k=32 context=8192 =====
+KL rc llama3_8b_instruct: 0
+===== gemma4_e2b_it: KL backend=sglang output=TaylorAttack/results/gemma4_e2b_it_kl_official_sglang batch=16 top_k=32 context=8192 =====
+KL rc gemma4_e2b_it: 0
+===== gemma4_e4b_it: KL backend=sglang output=TaylorAttack/results/gemma4_e4b_it_kl_official_sglang batch=16 top_k=32 context=8192 =====
+KL rc gemma4_e4b_it: 0
+===== qwen35_9b: KL backend=sglang output=TaylorAttack/results/qwen35_9b_kl_official_sglang batch=16 top_k=32 context=8192 =====
+KL rc qwen35_9b: 0
+===== qwen36_27b: KL backend=sglang output=TaylorAttack/results/qwen36_27b_kl_official_sglang batch=8 top_k=32 context=8192 =====
+KL rc qwen36_27b: 0
+wrote combined KL table to /home/ubuntu/TaylorMLP_remote/TaylorMLP/TaylorAttack/results/kl_official_sglang_all.md
