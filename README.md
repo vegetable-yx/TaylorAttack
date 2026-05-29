@@ -104,12 +104,6 @@ All models, datasets, and protection parameters are defined in `TaylorAttack/con
 
 ## Reference
 
-```bibtex
-@article{wang2024taylorunswift,
-  title   = {Towards Provable (In)Security of Model Protection via Taylor Expansion},
-  author  = {Wang, Guanchu and others},
-  year    = {2024},
-}
-```
+[Taylor Unswift: Secured Weight Release for Large Language Models via Taylor Expansion](https://aclanthology.org/2024.emnlp-main.393/) (Wang et al., EMNLP 2024)
 
 Original implementation: [https://github.com/guanchuwang/taylor-unswift](https://github.com/guanchuwang/taylor-unswift)
